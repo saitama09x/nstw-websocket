@@ -1,0 +1,8 @@
+export const DRIVERS = "DRIVERS"
+export const AVATARS = "AVATARS"
+export const SELDRIVER = "SELDRIVER"
+export const LASTLOC = "LASTLOC"
+export const DESTINATION = "DESTINATION"
+export const REFRESH = "REFRESH"
+export const ISONLINE = "ISONLINE"
+export const UPDATEDRIVER = "UPDATEDRIVER"

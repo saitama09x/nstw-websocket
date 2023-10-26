@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.incident-map{
+   position:fixed;
+   height: 100%;
+   width:100%;
+}
+
+.example-overlay{
+  background-color: white;
+  padding:5px;
+  
+}
+
+#avatars{
+    position: fixed;
+    z-index: 999;
+    right: 0px;
+    background-color: #e9d43b;
+    padding: 15px;
+    height: 95%;
+    width: 100px;
+}
+
+#avatars .avatar{
+  background-color: #132c50;
+  padding: 10px;
+  border-radius: 30px;
+  opacity: 0.2;
+}
+
+#avatars .selected-avatar{
+    position: absolute;
+    left: -40px;
+    top: 0px;
+    font-size: 35px;
+}
+
+#avatars.hide{
+    right: -100px;
+}
+
+.show-btn{
+    position: absolute;
+    top: 0px;
+    z-index: 9;
+    right: 0px;
+}
+
+.example-overlay{
+  box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+#avatars .avatar-btn.active{
+    
+}
+
+#avatars .avatar-btn.active .avatar{
+  background-color:#27ff00;  
+  opacity: 1;
+}
+
+#avatars .avatar-btn{
+  position:relative;
+  margin-bottom: 20px;
+  display: block;
+  border: unset;
+  background-color: #0000;
+}
+
+#avatars .avatar-btn:first-child{
+    margin-top: 0px;
+}
+
+#avatars .avatar .is-online{
+
+  position: absolute;
+  background-color: lime;
+  width: 15px;
+  height: 15px;
+  border-radius: 30px;
+  top: 0px;
+  right: 0px;
+
+}
+
+#avatars .avatar .is-offline{
+
+  position: absolute;
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 30px;
+  top: 0px;
+  right: 0px;
+
+}
+
+
+#modal-com{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom:0px;
+    z-index:9;
+    display:none;
+}
+
+#modal-com.show{
+    display:block;
+}
+
+#modal-com .backdrop{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #0000002b;
+}
+
+#modal-com .modal-main{
+    width: 35%;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    top:30%;
+    position: relative;
+    transition: transform .2s ease-out,-webkit-transform .2s ease-out;
+/*    transform:translate(0,-25%);*/
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+}
+
+/*#modal-com.show .modal-main{
+    transform:translate(0,0);
+}*/
+
+#modal-com .modal-header{
+    padding: 10px;
+    border-bottom: solid 1px #000;
+}
+
+#modal-com .modal-body{
+    padding: 10px;
+}
+
+#modal-com .modal-footer{
+    padding: 10px;
+}
